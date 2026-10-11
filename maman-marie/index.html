@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Les collations de Maman Marie — Collations ivoiriennes à Abidjan</title>
+<meta name="description" content="Cracky, chips de banane, popcorn, arachides, barres de baobab, gâteau salé : les collations de Maman Marie, à Abidjan. Commandez par WhatsApp ou par téléphone.">
+<meta name="theme-color" content="#24160F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script>var d=document.documentElement;d.classList.add('js');try{if(sessionStorage.getItem('intro'))d.classList.add('no-intro');else sessionStorage.setItem('intro','1')}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="intro" id="intro" aria-hidden="true"><span>Maman Marie</span></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#accueil" aria-label="Les collations de Maman Marie — accueil">Maman<b>Marie</b></a>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><i></i><i></i></button>
+  <nav id="menu" class="menu" aria-label="Navigation principale">
+    <a href="#accueil">Accueil</a>
+    <a href="#collations">Nos collations</a>
+    <a href="#univers">Notre univers</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+<section class="hero" id="accueil" data-section>
+  <span class="blob b1" data-parallax="0.08" aria-hidden="true"></span>
+  <span class="blob b2" data-parallax="-0.06" aria-hidden="true"></span>
+  <div class="hero-text">
+    <p class="kicker stage" style="--d:.9s">Abidjan · Côte d'Ivoire</p>
+    <h1 class="stage" style="--d:1s">Ça croque.<br>Ça <em>réconforte.</em></h1>
+    <p class="lead stage" style="--d:1.15s">Les collations de Maman Marie : chips de banane, popcorn, arachides, barres de baobab… tout ce qu'il faut pour la pause qui fait du bien.</p>
+    <div class="actions stage" style="--d:1.3s">
+      <a class="btn btn-primary" href="#collations">Voir nos collations</a>
+      <a class="btn btn-ghost" href="#contact">Commander</a>
+    </div>
+  </div>
+  <div class="hero-visual stage" style="--d:1.2s" aria-hidden="true">
+    <div class="tile t1"><span>Photo<br>à venir</span></div>
+    <div class="tile t2"><span>Photo<br>à venir</span></div>
+    <div class="tile t3"><span>Photo<br>à venir</span></div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div><span>Cracky</span><span>Chips de banane</span><span>Popcorn</span><span>Croquettes</span><span>Cacahuètes</span><span>Arachides grillées</span><span>Barres de baobab</span><span>Gâteau salé</span><span>Cracky</span><span>Chips de banane</span><span>Popcorn</span><span>Croquettes</span><span>Cacahuètes</span><span>Arachides grillées</span><span>Barres de baobab</span><span>Gâteau salé</span></div></div>
+
+<section class="featured" aria-labelledby="t-feat">
+  <h2 id="t-feat" class="reveal">À croquer<br>en premier</h2>
+  <div class="feat-grid" id="featured"></div>
+</section>
+
+<section class="catalog" id="collations" data-section aria-labelledby="t-cat">
+  <div class="sec-head">
+    <h2 id="t-cat" class="reveal">Nos collations</h2>
+    <p class="reveal">Les prix et unités de vente sont communiqués à la commande. Prix sur demande : touchez « Commander » pour obtenir le tarif d'un produit.</p>
+  </div>
+  <div class="filters reveal" role="group" aria-label="Filtrer les collations" id="filters">
+    <button class="chip" data-filter="all" aria-pressed="true">Tout</button>
+    <button class="chip" data-filter="croustillant" aria-pressed="false">Croustillant</button>
+    <button class="chip" data-filter="graines" aria-pressed="false">Graines</button>
+    <button class="chip" data-filter="maison" aria-pressed="false">Fait maison</button>
+  </div>
+  <p class="sr-only" id="count" aria-live="polite"></p>
+  <ul class="grid" id="grid"></ul>
+  <p class="empty" id="empty" hidden>Aucune collation dans cette catégorie pour le moment. <button class="link" data-filter-reset>Voir tout</button></p>
+</section>
+
+<section class="about" id="univers" data-section aria-labelledby="t-about">
+  <div class="about-visual reveal" aria-hidden="true"><div class="tile t4"><span>Photo de Maman Marie<br>à venir</span></div></div>
+  <div class="about-text">
+    <h2 id="t-about" class="reveal">Des collations de chez nous, pensées pour toutes les pauses.</h2>
+    <p class="reveal">Du croustillant de la banane aux arachides grillées, chaque collation est préparée à Abidjan pour accompagner la journée : au bureau, à la maison, en route ou en réception.</p>
+    <ul class="points reveal">
+      <li><b>Locales</b>Des saveurs ivoiriennes qu'on reconnaît.</li>
+      <li><b>Variées</b>Du croquant, du salé, du fait maison.</li>
+      <li><b>Directes</b>On commande simplement, par WhatsApp ou par téléphone.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="contact" id="contact" data-section aria-labelledby="t-contact">
+  <h2 id="t-contact" class="reveal">On vous prépare ça ?</h2>
+  <p class="reveal">Dites-nous ce que vous voulez et en quelle quantité. Les modalités de livraison et les horaires vous sont confirmés lors de la commande.</p>
+  <div class="actions reveal">
+    <a class="btn btn-primary" data-wa href="#contact">Commander sur WhatsApp</a>
+    <a class="btn btn-dark" data-call href="#contact">Appeler</a>
+  </div>
+  <p class="notice" id="contact-notice" hidden>Les numéros de contact seront affichés dès leur confirmation.</p>
+</section>
+</main>
+
+<footer class="footer">
+  <p class="brand">Maman<b>Marie</b></p>
+  <p>Les collations de Maman Marie · Abidjan, Côte d'Ivoire</p>
+  <p>© <span id="year"></span> Tous droits réservés.</p>
+</footer>
+<button class="totop" id="totop" aria-label="Retour en haut de page" hidden>↑</button>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
