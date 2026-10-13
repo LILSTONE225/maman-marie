@@ -1,9 +1,0 @@
-name = "maman-tokpa-site"
-pages_build_output_dir = "."
-compatibility_date = "2026-10-13"
-
-[vars]
-GITHUB_OWNER = "LILSTONE225"
-GITHUB_REPO = "maman-marie"
-GITHUB_PROJECT_DIR = "maman-marie"
-GITHUB_BRANCH = "main"
