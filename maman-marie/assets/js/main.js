@@ -159,13 +159,13 @@
         : "";
       var hasPrice = variants.some(function (variant) { return typeof variant.retailPrice === "number"; }) || typeof p.price === "number";
       var unitPrice = selected ? selected.retailPrice : p.price;
-      var hasWholesale = p.id === "cacahuetes";
+      var hasWholesale = p.id === "cacahuetes" || p.id === "arachides";
       var soldOut = p.available === false || (selected && selected.available === false);
       var offer = p.offer ? '<p class="product-offer">' + esc(p.offer) + '</p>' : "";
       var purchaseMode = hasWholesale
         ? '<div class="wholesale-feature">' +
           '<aside class="wholesale-offer" aria-label="Offre de vente en gros">' +
-          '<strong>Vente en gros possible pour les cacahuètes</strong>' +
+          '<strong>Vente en gros possible pour ' + esc(p.name.toLowerCase()) + '</strong>' +
           '<p>' + esc(p.offer || 'Dès 1 000 FCFA d’achat, gagnez 250 FCFA de bénéfice potentiel par tranche de 1 000 FCFA si vous revendez.') + '</p></aside>' +
           '<label class="purchase-mode"><span>Type d’achat</span><select data-purchase-mode aria-label="Choisir un achat classique ou en gros pour ' + esc(p.name) + '">' +
           '<option value="retail">Achat classique</option><option value="wholesale">Achat en gros pour revendre</option>' +
