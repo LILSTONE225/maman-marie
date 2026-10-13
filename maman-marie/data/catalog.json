@@ -1,0 +1,183 @@
+{
+  "phoneCall": "2250172123328",
+  "phoneWhatsapp": "2250172123328",
+  "products": [
+    {
+      "id": "cracky",
+      "name": "Cracky",
+      "cat": "croustillant",
+      "desc": "Le croustillant signature à grignoter à toute heure.",
+      "price": 100,
+      "unit": "unité",
+      "image": "assets/img/cracky.jpg"
+    },
+    {
+      "id": "banane",
+      "name": "Chips",
+      "cat": "croustillant",
+      "desc": "Fines tranches de banane, craquantes et dorées.",
+      "price": null,
+      "unit": null,
+      "image": null,
+      "variants": [
+        {
+          "id": "mure",
+          "name": "Chips de banane mûre",
+          "recipe": "Mûre",
+          "image": "assets/img/chips-banane-mure.jpg",
+          "retailPrice": 100,
+          "retailUnit": "unité"
+        },
+        {
+          "id": "non-mure",
+          "name": "Chips de banane non mûre",
+          "recipe": "Non mûre",
+          "image": "assets/img/chips-banane-non-mure.jpg",
+          "retailPrice": 100,
+          "retailUnit": "unité"
+        }
+      ]
+    },
+    {
+      "id": "popcorn",
+      "name": "Popcorn",
+      "cat": "croustillant",
+      "desc": "Léger, aérien, parfait pour partager.",
+      "price": null,
+      "unit": null,
+      "image": "assets/img/popcorn.jpg",
+      "variants": [
+        {
+          "id": "nature",
+          "name": "Popcorn simple",
+          "image": null,
+          "retailPrice": 100,
+          "retailUnit": "unité"
+        },
+        {
+          "id": "caramelise",
+          "name": "Popcorn caramélisé",
+          "image": "assets/img/popcorn-caramelise.jpg",
+          "retailPrice": 100,
+          "retailUnit": "unité"
+        }
+      ]
+    },
+    {
+      "id": "croquettes",
+      "name": "Croquettes",
+      "cat": "croustillant",
+      "desc": "Croustillantes dehors, savoureuses dedans.",
+      "price": null,
+      "unit": null,
+      "image": null,
+      "variants": [
+        {
+          "id": "option-100",
+          "name": "Option 100 FCFA",
+          "image": "assets/img/croquettes-100.jpg",
+          "retailPrice": 100,
+          "retailUnit": "unité"
+        },
+        {
+          "id": "option-300",
+          "name": "Option 300 FCFA",
+          "image": "assets/img/croquettes-300.jpg",
+          "retailPrice": 300,
+          "retailUnit": "unité"
+        },
+        {
+          "id": "option-500",
+          "name": "Option 500 FCFA",
+          "image": "assets/img/croquettes-500.jpg",
+          "retailPrice": 500,
+          "retailUnit": "unité"
+        }
+      ]
+    },
+    {
+      "id": "cacahuetes",
+      "name": "Cacahuètes",
+      "cat": "graines",
+      "desc": "Le classique de l'apéro, simple et généreux.",
+      "price": null,
+      "unit": null,
+      "image": null,
+      "variants": [
+        {
+          "id": "option-50",
+          "name": "Option 50 FCFA",
+          "image": "assets/img/cacahuetes-50.jpg",
+          "retailPrice": 50,
+          "retailUnit": "unité"
+        },
+        {
+          "id": "option-100",
+          "name": "Option 100 FCFA",
+          "image": "assets/img/cacahuetes-100.jpg",
+          "retailPrice": 100,
+          "retailUnit": "unité"
+        },
+        {
+          "id": "option-500",
+          "name": "Option 500 FCFA",
+          "image": "assets/img/cacahuetes-500.jpg",
+          "retailPrice": 500,
+          "retailUnit": "unité"
+        }
+      ]
+    },
+    {
+      "id": "arachides",
+      "name": "Arachides grillées salées",
+      "cat": "graines",
+      "desc": "Grillées et salées pour un goût franc et réconfortant.",
+      "price": null,
+      "unit": null,
+      "image": null,
+      "variants": [
+        {
+          "id": "option-50",
+          "name": "Option 50 FCFA",
+          "image": "assets/img/arachides-salees-50.jpg",
+          "retailPrice": 50,
+          "retailUnit": "unité"
+        },
+        {
+          "id": "option-100",
+          "name": "Option 100 FCFA",
+          "image": "assets/img/arachides-salees-100.jpg",
+          "retailPrice": 100,
+          "retailUnit": "unité"
+        }
+      ]
+    },
+    {
+      "id": "baobab",
+      "name": "Barres de baobab",
+      "cat": "maison",
+      "desc": "Une barre énergétique au fruit du baobab.",
+      "price": 50,
+      "unit": "unité",
+      "image": "assets/img/barres-baobab.jpg"
+    },
+    {
+      "id": "gateau",
+      "name": "Gâteau salé",
+      "cat": "maison",
+      "desc": "Fait maison, pour la pause ou la réception.",
+      "price": 100,
+      "unit": "unité",
+      "image": "assets/img/gateau-sale.jpg"
+    },
+    {
+      "id": "tofi",
+      "name": "Tôfi",
+      "cat": "maison",
+      "desc": "Une collation gourmande à découvrir.",
+      "price": 25,
+      "unit": "unité",
+      "image": "assets/img/tofi.jpg"
+    }
+  ]
+}

@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Les collations de Maman Marie — Collations ivoiriennes à Abidjan</title>
-<meta name="description" content="Cracky, chips de banane, popcorn, arachides, barres de baobab, gâteau salé : les collations de Maman Marie, à Abidjan. Commandez par WhatsApp ou par téléphone.">
+<title>Les collations de Maman Tokpa — Collations ivoiriennes à Abidjan</title>
+<meta name="description" content="Cracky, chips de banane, popcorn, arachides, barres de baobab, gâteau salé : les collations de Maman Tokpa, à Abidjan. Commandez par WhatsApp ou par téléphone.">
 <meta name="theme-color" content="#24160F">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +14,18 @@
 </head>
 <body>
 <a class="skip" href="#main">Aller au contenu</a>
-<div class="intro" id="intro" aria-hidden="true"><span>Maman Marie</span></div>
+<div class="intro" id="intro" aria-hidden="true">
+  <div class="intro-content">
+    <img src="assets/img/logo.png" alt="">
+    <p class="intro-tagline">Les collations qui font plaisir</p>
+    <div class="intro-loader"><span></span></div>
+    <p class="intro-loading">Préparation de vos envies gourmandes<span class="loading-dots"></span></p>
+  </div>
+</div>
 <div class="progress" id="progress" aria-hidden="true"></div>
 
 <header class="nav" id="nav">
-  <a class="brand" href="#accueil" aria-label="Les collations de Maman Marie — accueil">Maman<b>Marie</b></a>
+  <a class="brand" href="#accueil" aria-label="Les collations de Maman Tokpa — accueil"><img class="brand-logo" src="assets/img/logo.png" alt=""><span class="brand-name">Les collations de <b>Maman Tokpa</b></span></a>
   <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><i></i><i></i></button>
   <nav id="menu" class="menu" aria-label="Navigation principale">
     <a href="#accueil">Accueil</a>
@@ -35,36 +42,44 @@
   <div class="hero-text">
     <p class="kicker stage" style="--d:.9s">Abidjan · Côte d'Ivoire</p>
     <h1 class="stage" style="--d:1s">Ça croque.<br>Ça <em>réconforte.</em></h1>
-    <p class="lead stage" style="--d:1.15s">Les collations de Maman Marie : chips de banane, popcorn, arachides, barres de baobab… tout ce qu'il faut pour la pause qui fait du bien.</p>
+    <p class="lead stage" style="--d:1.15s">Les collations de Maman Tokpa : chips de banane, popcorn, arachides, barres de baobab… tout ce qu'il faut pour la pause qui fait du bien.</p>
     <div class="actions stage" style="--d:1.3s">
       <a class="btn btn-primary" href="#collations">Voir nos collations</a>
       <a class="btn btn-ghost" href="#contact">Commander</a>
     </div>
   </div>
   <div class="hero-visual stage" style="--d:1.2s" aria-hidden="true">
-    <div class="tile t1"><span>Photo<br>à venir</span></div>
-    <div class="tile t2"><span>Photo<br>à venir</span></div>
-    <div class="tile t3"><span>Photo<br>à venir</span></div>
+    <div class="tile t1"><img src="assets/img/hero-arachides.jpg" alt=""></div>
+    <div class="tile t2"><img src="assets/img/hero-chips.jpg" alt=""></div>
+    <div class="tile t3"><img src="assets/img/hero-croquettes.jpg" alt=""></div>
   </div>
 </section>
 
-<div class="marquee" aria-hidden="true"><div><span>Cracky</span><span>Chips de banane</span><span>Popcorn</span><span>Croquettes</span><span>Cacahuètes</span><span>Arachides grillées</span><span>Barres de baobab</span><span>Gâteau salé</span><span>Cracky</span><span>Chips de banane</span><span>Popcorn</span><span>Croquettes</span><span>Cacahuètes</span><span>Arachides grillées</span><span>Barres de baobab</span><span>Gâteau salé</span></div></div>
+<div class="marquee" aria-hidden="true"><div><span>Cracky</span><span>Chips de banane</span><span>Popcorn</span><span>Croquettes</span><span>Cacahuètes</span><span>Arachides grillées</span><span>Barres de baobab</span><span>Gâteau salé</span><span>Tôfi</span><span>Cracky</span><span>Chips de banane</span><span>Popcorn</span><span>Croquettes</span><span>Cacahuètes</span><span>Arachides grillées</span><span>Barres de baobab</span><span>Gâteau salé</span><span>Tôfi</span></div></div>
 
 <section class="featured" aria-labelledby="t-feat">
   <h2 id="t-feat" class="reveal">À croquer<br>en premier</h2>
-  <div class="feat-grid" id="featured"></div>
+  <div class="featured-carousel" id="featured-carousel" role="region" aria-roledescription="carrousel" aria-label="Sélection de collations">
+    <div class="feat-grid" id="featured"></div>
+    <div class="carousel-controls">
+      <button class="carousel-control" type="button" data-featured-previous aria-label="Collation précédente">←</button>
+      <div class="carousel-indicators" role="group" aria-label="Choisir une collation"></div>
+      <button class="carousel-control" type="button" data-featured-toggle aria-label="Mettre le carrousel en pause" aria-pressed="false">Ⅱ</button>
+      <button class="carousel-control" type="button" data-featured-next aria-label="Collation suivante">→</button>
+    </div>
+    <p class="sr-only" data-featured-status aria-live="polite"></p>
+  </div>
 </section>
 
 <section class="catalog" id="collations" data-section aria-labelledby="t-cat">
   <div class="sec-head">
     <h2 id="t-cat" class="reveal">Nos collations</h2>
-    <p class="reveal">Les prix et unités de vente sont communiqués à la commande. Prix sur demande : touchez « Commander » pour obtenir le tarif d'un produit.</p>
+    <p class="reveal">Les options tarifées sont des prix de détail, non des prix de gros. La nature de l’unité ou de l’option reste à confirmer; les autres prix sont communiqués à la commande.</p>
   </div>
   <div class="filters reveal" role="group" aria-label="Filtrer les collations" id="filters">
     <button class="chip" data-filter="all" aria-pressed="true">Tout</button>
     <button class="chip" data-filter="croustillant" aria-pressed="false">Croustillant</button>
     <button class="chip" data-filter="graines" aria-pressed="false">Graines</button>
-    <button class="chip" data-filter="maison" aria-pressed="false">Fait maison</button>
   </div>
   <p class="sr-only" id="count" aria-live="polite"></p>
   <ul class="grid" id="grid"></ul>
@@ -72,10 +87,16 @@
 </section>
 
 <section class="about" id="univers" data-section aria-labelledby="t-about">
-  <div class="about-visual reveal" aria-hidden="true"><div class="tile t4"><span>Photo de Maman Marie<br>à venir</span></div></div>
+  <div class="about-visual reveal" aria-hidden="true"><div class="tile t4"><img src="assets/img/collage-produits.jpg" alt="" loading="lazy" decoding="async"></div></div>
   <div class="about-text">
     <h2 id="t-about" class="reveal">Des collations de chez nous, pensées pour toutes les pauses.</h2>
     <p class="reveal">Du croustillant de la banane aux arachides grillées, chaque collation est préparée à Abidjan pour accompagner la journée : au bureau, à la maison, en route ou en réception.</p>
+    <aside class="event-offer reveal">
+      <p class="event-kicker">À partager lors de vos événements</p>
+      <h3>Vos collations préférées, préparées sur mesure.</h3>
+      <p>Anniversaire, mariage, baptême, réunion professionnelle ou fête en famille : commandez des croquettes et d’autres collations selon vos envies et l’occasion. Réservez directement auprès de la vendeuse pour échanger sur votre événement, les quantités souhaitées et les modalités.</p>
+      <a class="btn btn-ghost" href="#contact">Réserver avec la vendeuse</a>
+    </aside>
     <ul class="points reveal">
       <li><b>Locales</b>Des saveurs ivoiriennes qu'on reconnaît.</li>
       <li><b>Variées</b>Du croquant, du salé, du fait maison.</li>
@@ -96,13 +117,13 @@
 </main>
 
 <footer class="footer">
-  <p class="brand">Maman<b>Marie</b></p>
-  <p>Les collations de Maman Marie · Abidjan, Côte d'Ivoire</p>
+  <p class="brand"><img class="footer-logo" src="assets/img/logo.png" alt="Les collations de Maman Tokpa"></p>
+  <p>Les collations de Maman Tokpa · Abidjan, Côte d'Ivoire</p>
   <p>© <span id="year"></span> Tous droits réservés.</p>
 </footer>
 <button class="totop" id="totop" aria-label="Retour en haut de page" hidden>↑</button>
 
 <script src="assets/js/config.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="assets/js/site-loader.js"></script>
 </body>
 </html>
