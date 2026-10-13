@@ -168,7 +168,10 @@
   }
 
   api("/api/auth/session").then(function (result) {
-    if (result.authenticated) return showDashboard();
+    if (!result.authenticated) return;
+    return showDashboard().catch(function (error) {
+      setMessage(loginMessage, "La connexion administrateur est valide, mais GitHub refuse l’accès au catalogue : " + error.message, "error");
+    });
   }).catch(function (error) {
     showSetupIfMissing(error);
     if (!setupPanel.hidden) return;
@@ -190,7 +193,7 @@
       await showDashboard();
     } catch (error) {
       showSetupIfMissing(error);
-      setMessage(loginMessage, error.message, "error");
+      setMessage(loginMessage, "Connexion ou chargement du catalogue impossible : " + error.message, "error");
     }
   });
 

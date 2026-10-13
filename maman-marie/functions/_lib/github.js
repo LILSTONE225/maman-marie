@@ -30,7 +30,10 @@ async function githubRequest(env, path, options = {}, ref) {
   if (response.status === 404) return { response, data: null };
   const data = await response.json().catch(() => null);
   if (!response.ok) {
-    const detail = data && data.message ? data.message : `GitHub API returned ${response.status}`;
+    let detail = data && data.message ? data.message : `GitHub API returned ${response.status}`;
+    if (response.status === 401 || response.status === 403) {
+      detail += ". Vérifiez le secret GITHUB_TOKEN dans Cloudflare : token actif, dépôt LILSTONE225/maman-marie autorisé et permission Contents en lecture et écriture.";
+    }
     throw new Error(detail);
   }
   return { response, data };
