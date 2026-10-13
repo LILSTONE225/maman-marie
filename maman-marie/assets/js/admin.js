@@ -177,7 +177,8 @@
 
   $("#login-form").addEventListener("submit", async function (event) {
     event.preventDefault();
-    var password = event.currentTarget.elements.password.value;
+    var form = event.currentTarget;
+    var password = form.elements.password.value;
     setMessage(loginMessage, "Connexion en cours…", "");
     try {
       await api("/api/auth/login", {
@@ -185,7 +186,7 @@
         headers: { "content-type": "application/json" },
         body: JSON.stringify({ password: password })
       });
-      event.currentTarget.reset();
+      form.reset();
       await showDashboard();
     } catch (error) {
       showSetupIfMissing(error);
