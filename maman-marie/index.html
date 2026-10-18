@@ -112,14 +112,27 @@
     <a class="btn btn-primary" data-wa href="#contact">Commander sur WhatsApp</a>
     <a class="btn btn-dark" data-call href="#contact">Appeler</a>
   </div>
-  <p class="notice" id="contact-notice" hidden>Les numéros de contact seront affichés dès leur confirmation.</p>
+  <p class="notice" id="contact-notice" hidden>Le contact n’est pas disponible pour le moment. Réessayez plus tard.</p>
 </section>
 </main>
 
 <footer class="footer">
-  <p class="brand"><img class="footer-logo" src="assets/img/logo.png" alt="Les collations de Maman Tokpa"></p>
-  <p>Les collations de Maman Tokpa · Abidjan, Côte d'Ivoire</p>
-  <p>© <span id="year"></span> Tous droits réservés.</p>
+  <div class="footer-identity">
+    <img class="footer-logo" src="assets/img/logo.png" alt="">
+    <p><b>Les collations de Maman Tokpa</b><br>Abidjan, Côte d'Ivoire</p>
+  </div>
+  <div class="footer-contact">
+    <h2>Contactez-nous</h2>
+    <a data-call href="#contact">Téléphone : <span data-phone-number>+225 01 72 12 33 28</span></a>
+    <a data-wa href="#contact">WhatsApp : <span data-whatsapp-number>+225 01 72 12 33 28</span></a>
+  </div>
+  <div class="footer-qr">
+    <a data-wa href="#contact" aria-label="Scanner le code QR pour nous contacter sur WhatsApp">
+      <img src="assets/img/whatsapp-qr.jpeg" alt="Code QR WhatsApp des collations de Maman Tokpa" width="352" height="352" loading="lazy">
+    </a>
+    <p>Scannez pour nous écrire sur WhatsApp</p>
+  </div>
+  <p class="footer-copyright">© <span id="year"></span> Tous droits réservés.</p>
 </footer>
 <button class="totop" id="totop" aria-label="Retour en haut de page" hidden>↑</button>
 

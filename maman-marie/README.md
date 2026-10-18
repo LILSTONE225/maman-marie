@@ -23,4 +23,6 @@ Les numéros de téléphone doivent être écrits uniquement avec des chiffres e
 
 ## Publication
 
-Le site peut être publié comme contenu statique depuis le dépôt GitHub avec Cloudflare Pages. Utiliser `maman-marie` comme dossier racine du projet et `.` comme dossier de sortie. Il n'y a pas de commande de build à renseigner. Toute mise à jour publiée sur la branche de production sera redéployée automatiquement si l'intégration Git est activée.
+Le site est publié sur GitHub Pages par le workflow `.github/workflows/pages.yml`. Dans les paramètres du dépôt GitHub, choisir **Settings > Pages > Build and deployment > Source: GitHub Actions**.
+
+Le workflow publie directement le dossier `maman-marie/`; aucune commande de build n'est nécessaire. Chaque mise à jour de ce dossier poussée sur `main` déclenche un déploiement. Le site sera disponible à l'adresse `https://lilstone225.github.io/maman-marie/` une fois GitHub Pages activé et le premier déploiement terminé.

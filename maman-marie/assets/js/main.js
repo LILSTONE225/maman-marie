@@ -97,12 +97,24 @@
       el.removeAttribute("target");
       el.addEventListener("click", function (e) { e.preventDefault(); $("#contact-notice").hidden = false; });
     };
-    var waBtn = $("[data-wa]"), callBtn = $("[data-call]");
-    if (waNum) {
-      waBtn.href = waLink("Bonjour Maman Tokpa, je souhaite passer commande.");
-      waBtn.target = "_blank"; waBtn.rel = "noopener noreferrer";
-    } else disable(waBtn);
-    if (callNum) callBtn.href = "tel:+" + callNum; else disable(callBtn);
+    var formatPhone = function (n) {
+      return n ? "+" + n.slice(0, 3) + " " + n.slice(3).replace(/(\d{2})(?=\d)/g, "$1 ").trim() : "";
+    };
+    $$("[data-phone-number]").forEach(function (el) {
+      el.textContent = callNum ? formatPhone(callNum) : "Numéro non renseigné";
+    });
+    $$("[data-whatsapp-number]").forEach(function (el) {
+      el.textContent = waNum ? formatPhone(waNum) : "Numéro non renseigné";
+    });
+    $$("[data-wa]").forEach(function (el) {
+      if (waNum) {
+        el.href = waLink("Bonjour Maman Tokpa, je souhaite passer commande.");
+        el.target = "_blank"; el.rel = "noopener noreferrer";
+      } else disable(el);
+    });
+    $$("[data-call]").forEach(function (el) {
+      if (callNum) el.href = "tel:+" + callNum; else disable(el);
+    });
 
     /* ---------- Produits ---------- */
     var esc = function (s) { var d = document.createElement("div"); d.textContent = s; return d.innerHTML; };
