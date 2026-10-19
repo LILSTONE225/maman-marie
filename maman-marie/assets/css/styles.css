@@ -348,3 +348,13 @@ section{padding:var(--s5) var(--pad)}
   .menu,.menu a{transition-delay:0s!important}
   .nav.menu-open .brand{animation:none!important;opacity:1;transform:none}
 }
+
+/* Contenu éditable (espace propriétaire) */
+[data-sec][hidden],.menu a[hidden]{display:none!important}
+.legal{padding:var(--s5) var(--pad);background:var(--cream);color:var(--cocoa)}
+.legal h2{font-family:var(--f-title);margin-bottom:var(--s3)}
+.legal article{max-width:70ch;margin-bottom:var(--s4)}
+.legal h3{font-family:var(--f-title);margin-bottom:var(--s1)}
+.legal p{margin-bottom:var(--s2)}
+.legal small{opacity:.7}
+.footer-legal{color:inherit;text-decoration:underline}

@@ -16,8 +16,8 @@
 <a class="skip" href="#main">Aller au contenu</a>
 <div class="intro" id="intro" aria-hidden="true">
   <div class="intro-content">
-    <img src="assets/img/logo.png" alt="">
-    <p class="intro-tagline">Les collations qui font plaisir</p>
+    <img data-img="logo" src="assets/img/logo.png" alt="">
+    <p data-c="intro.tagline" class="intro-tagline">Les collations qui font plaisir</p>
     <div class="intro-loader"><span></span></div>
     <p class="intro-loading">Préparation de vos envies gourmandes<span class="loading-dots"></span></p>
   </div>
@@ -25,40 +25,40 @@
 <div class="progress" id="progress" aria-hidden="true"></div>
 
 <header class="nav" id="nav">
-  <a class="brand" href="#accueil" aria-label="Les collations de Maman Tokpa — accueil"><img class="brand-logo" src="assets/img/logo.png" alt=""><span class="brand-name">Les collations de <b>Maman Tokpa</b></span></a>
+  <a class="brand" href="#accueil" aria-label="Les collations de Maman Tokpa — accueil"><img data-img="logo" class="brand-logo" src="assets/img/logo.png" alt=""><span data-c="brand.name" class="brand-name">Les collations de <b>Maman Tokpa</b></span></a>
   <button class="burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu"><i></i><i></i></button>
   <nav id="menu" class="menu" aria-label="Navigation principale">
-    <a href="#accueil">Accueil</a>
-    <a href="#collations">Nos collations</a>
-    <a href="#univers">Notre univers</a>
-    <a href="#contact">Contact</a>
+    <a data-c="nav.accueil" href="#accueil">Accueil</a>
+    <a data-c="nav.collations" href="#collations">Nos collations</a>
+    <a data-c="nav.univers" href="#univers">Notre univers</a>
+    <a data-c="nav.contact" href="#contact">Contact</a>
   </nav>
 </header>
 
 <main id="main">
-<section class="hero" id="accueil" data-section>
+<section data-sec="accueil" class="hero" id="accueil" data-section>
   <span class="blob b1" data-parallax="0.08" aria-hidden="true"></span>
   <span class="blob b2" data-parallax="-0.06" aria-hidden="true"></span>
   <div class="hero-text">
-    <p class="kicker stage" style="--d:.9s">Abidjan · Côte d'Ivoire</p>
-    <h1 class="stage" style="--d:1s">Ça croque.<br>Ça <em>réconforte.</em></h1>
-    <p class="lead stage" style="--d:1.15s">Les collations de Maman Tokpa : chips de banane, popcorn, arachides, barres de baobab… tout ce qu'il faut pour la pause qui fait du bien.</p>
+    <p data-c="hero.kicker" class="kicker stage" style="--d:.9s">Abidjan · Côte d'Ivoire</p>
+    <h1 data-c="hero.titre" class="stage" style="--d:1s">Ça croque.<br>Ça <em>réconforte.</em></h1>
+    <p data-c="hero.texte" class="lead stage" style="--d:1.15s">Les collations de Maman Tokpa : chips de banane, popcorn, arachides, barres de baobab… tout ce qu'il faut pour la pause qui fait du bien.</p>
     <div class="actions stage" style="--d:1.3s">
-      <a class="btn btn-primary" href="#collations">Voir nos collations</a>
-      <a class="btn btn-ghost" href="#contact">Commander</a>
+      <a data-c="hero.bouton1" class="btn btn-primary" href="#collations">Voir nos collations</a>
+      <a data-c="hero.bouton2" class="btn btn-ghost" href="#contact">Commander</a>
     </div>
   </div>
   <div class="hero-visual stage" style="--d:1.2s" aria-hidden="true">
-    <div class="tile t1"><img src="assets/img/hero-arachides.jpg" alt=""></div>
-    <div class="tile t2"><img src="assets/img/hero-chips.jpg" alt=""></div>
-    <div class="tile t3"><img src="assets/img/hero-croquettes.jpg" alt=""></div>
+    <div class="tile t1"><img data-img="hero.image1" src="assets/img/hero-arachides.jpg" alt=""></div>
+    <div class="tile t2"><img data-img="hero.image2" src="assets/img/hero-chips.jpg" alt=""></div>
+    <div class="tile t3"><img data-img="hero.image3" src="assets/img/hero-croquettes.jpg" alt=""></div>
   </div>
 </section>
 
-<div class="marquee" aria-hidden="true"><div><span>Cracky</span><span>Chips de banane</span><span>Popcorn</span><span>Croquettes</span><span>Cacahuètes</span><span>Arachides grillées</span><span>Barres de baobab</span><span>Gâteau salé</span><span>Tôfi</span><span>Cracky</span><span>Chips de banane</span><span>Popcorn</span><span>Croquettes</span><span>Cacahuètes</span><span>Arachides grillées</span><span>Barres de baobab</span><span>Gâteau salé</span><span>Tôfi</span></div></div>
+<div data-sec="ruban" class="marquee" aria-hidden="true"><div><span>Cracky</span><span>Chips de banane</span><span>Popcorn</span><span>Croquettes</span><span>Cacahuètes</span><span>Arachides grillées</span><span>Barres de baobab</span><span>Gâteau salé</span><span>Tôfi</span><span>Cracky</span><span>Chips de banane</span><span>Popcorn</span><span>Croquettes</span><span>Cacahuètes</span><span>Arachides grillées</span><span>Barres de baobab</span><span>Gâteau salé</span><span>Tôfi</span></div></div>
 
-<section class="featured" aria-labelledby="t-feat">
-  <h2 id="t-feat" class="reveal">À croquer<br>en premier</h2>
+<section data-sec="selection" class="featured" aria-labelledby="t-feat">
+  <h2 data-c="selection.titre" id="t-feat" class="reveal">À croquer<br>en premier</h2>
   <div class="featured-carousel" id="featured-carousel" role="region" aria-roledescription="carrousel" aria-label="Sélection de collations">
     <div class="feat-grid" id="featured"></div>
     <div class="carousel-controls">
@@ -71,72 +71,80 @@
   </div>
 </section>
 
-<section class="catalog" id="collations" data-section aria-labelledby="t-cat">
+<section data-sec="collations" class="catalog" id="collations" data-section aria-labelledby="t-cat">
   <div class="sec-head">
-    <h2 id="t-cat" class="reveal">Nos collations</h2>
-    <p class="reveal">Les options tarifées sont des prix de détail, non des prix de gros. La nature de l’unité ou de l’option reste à confirmer; les autres prix sont communiqués à la commande.</p>
+    <h2 data-c="catalogue.titre" id="t-cat" class="reveal">Nos collations</h2>
+    <p data-c="catalogue.note" class="reveal">Les options tarifées sont des prix de détail, non des prix de gros. La nature de l’unité ou de l’option reste à confirmer; les autres prix sont communiqués à la commande.</p>
   </div>
   <div class="filters reveal" role="group" aria-label="Filtrer les collations" id="filters">
-    <button class="chip" data-filter="all" aria-pressed="true">Tout</button>
-    <button class="chip" data-filter="croustillant" aria-pressed="false">Croustillant</button>
-    <button class="chip" data-filter="graines" aria-pressed="false">Graines</button>
+    <button data-c="filtre.tout" class="chip" data-filter="all" aria-pressed="true">Tout</button>
+    <button data-c="filtre.croustillant" class="chip" data-filter="croustillant" aria-pressed="false">Croustillant</button>
+    <button data-c="filtre.graines" class="chip" data-filter="graines" aria-pressed="false">Graines</button>
   </div>
   <p class="sr-only" id="count" aria-live="polite"></p>
   <ul class="grid" id="grid"></ul>
   <p class="empty" id="empty" hidden>Aucune collation dans cette catégorie pour le moment. <button class="link" data-filter-reset>Voir tout</button></p>
 </section>
 
-<section class="about" id="univers" data-section aria-labelledby="t-about">
-  <div class="about-visual reveal" aria-hidden="true"><div class="tile t4"><img src="assets/img/collage-produits.jpg" alt="" loading="lazy" decoding="async"></div></div>
+<section data-sec="univers" class="about" id="univers" data-section aria-labelledby="t-about">
+  <div class="about-visual reveal" aria-hidden="true"><div class="tile t4"><img data-img="univers.image" src="assets/img/collage-produits.jpg" alt="" loading="lazy" decoding="async"></div></div>
   <div class="about-text">
-    <h2 id="t-about" class="reveal">Des collations de chez nous, pensées pour toutes les pauses.</h2>
-    <p class="reveal">Du croustillant de la banane aux arachides grillées, chaque collation est préparée à Abidjan pour accompagner la journée : au bureau, à la maison, en route ou en réception.</p>
+    <h2 data-c="univers.titre" id="t-about" class="reveal">Des collations de chez nous, pensées pour toutes les pauses.</h2>
+    <p data-c="univers.texte" class="reveal">Du croustillant de la banane aux arachides grillées, chaque collation est préparée à Abidjan pour accompagner la journée : au bureau, à la maison, en route ou en réception.</p>
     <aside class="event-offer reveal">
-      <p class="event-kicker">À partager lors de vos événements</p>
-      <h3>Vos collations préférées, préparées sur mesure.</h3>
-      <p>Anniversaire, mariage, baptême, réunion professionnelle ou fête en famille : commandez des croquettes et d’autres collations selon vos envies et l’occasion. Réservez directement auprès de la vendeuse pour échanger sur votre événement, les quantités souhaitées et les modalités.</p>
-      <a class="btn btn-ghost" href="#contact">Réserver avec la vendeuse</a>
+      <p data-c="evenement.surtitre" class="event-kicker">À partager lors de vos événements</p>
+      <h3 data-c="evenement.titre">Vos collations préférées, préparées sur mesure.</h3>
+      <p data-c="evenement.texte">Anniversaire, mariage, baptême, réunion professionnelle ou fête en famille : commandez des croquettes et d’autres collations selon vos envies et l’occasion. Réservez directement auprès de la vendeuse pour échanger sur votre événement, les quantités souhaitées et les modalités.</p>
+      <a data-c="evenement.bouton" class="btn btn-ghost" href="#contact">Réserver avec la vendeuse</a>
     </aside>
     <ul class="points reveal">
-      <li><b>Locales</b>Des saveurs ivoiriennes qu'on reconnaît.</li>
-      <li><b>Variées</b>Du croquant, du salé, du fait maison.</li>
-      <li><b>Directes</b>On commande simplement, par WhatsApp ou par téléphone.</li>
+      <li data-c="univers.point1"><b>Locales</b>Des saveurs ivoiriennes qu'on reconnaît.</li>
+      <li data-c="univers.point2"><b>Variées</b>Du croquant, du salé, du fait maison.</li>
+      <li data-c="univers.point3"><b>Directes</b>On commande simplement, par WhatsApp ou par téléphone.</li>
     </ul>
   </div>
 </section>
 
-<section class="contact" id="contact" data-section aria-labelledby="t-contact">
-  <h2 id="t-contact" class="reveal">On vous prépare ça ?</h2>
-  <p class="reveal">Dites-nous ce que vous voulez et en quelle quantité. Les modalités de livraison et les horaires vous sont confirmés lors de la commande.</p>
+<section data-sec="contact" class="contact" id="contact" data-section aria-labelledby="t-contact">
+  <h2 data-c="contact.titre" id="t-contact" class="reveal">On vous prépare ça ?</h2>
+  <p data-c="contact.texte" class="reveal">Dites-nous ce que vous voulez et en quelle quantité. Les modalités de livraison et les horaires vous sont confirmés lors de la commande.</p>
   <div class="actions reveal">
-    <a class="btn btn-primary" data-wa href="#contact">Commander sur WhatsApp</a>
-    <a class="btn btn-dark" data-call href="#contact">Appeler</a>
+    <a data-c="contact.bouton.whatsapp" class="btn btn-primary" data-wa href="#contact">Commander sur WhatsApp</a>
+    <a data-c="contact.bouton.appel" class="btn btn-dark" data-call href="#contact">Appeler</a>
   </div>
-  <p class="notice" id="contact-notice" hidden>Le contact n’est pas disponible pour le moment. Réessayez plus tard.</p>
+  <p data-c="contact.indisponible" class="notice" id="contact-notice" hidden>Le contact n’est pas disponible pour le moment. Réessayez plus tard.</p>
 </section>
 </main>
 
+<section class="legal" id="legal-section" aria-labelledby="t-legal" hidden>
+  <h2 id="t-legal">Informations légales</h2>
+  <div id="legal-list"></div>
+</section>
+
 <footer class="footer">
   <div class="footer-identity">
-    <img class="footer-logo" src="assets/img/logo.png" alt="">
-    <p><b>Les collations de Maman Tokpa</b><br>Abidjan, Côte d'Ivoire</p>
+    <img data-img="logo" class="footer-logo" src="assets/img/logo.png" alt="">
+    <p data-c="pied.identite"><b>Les collations de Maman Tokpa</b><br>Abidjan, Côte d'Ivoire</p>
   </div>
   <div class="footer-contact">
-    <h2>Contactez-nous</h2>
+    <h2 data-c="pied.contact.titre">Contactez-nous</h2>
     <a data-call href="#contact">Téléphone : <span data-phone-number>+225 01 72 12 33 28</span></a>
     <a data-wa href="#contact">WhatsApp : <span data-whatsapp-number>+225 01 72 12 33 28</span></a>
   </div>
   <div class="footer-qr">
     <a data-wa href="#contact" aria-label="Scanner le code QR pour nous contacter sur WhatsApp">
-      <img src="assets/img/whatsapp-qr.jpeg" alt="Code QR WhatsApp des collations de Maman Tokpa" width="352" height="352" loading="lazy">
+      <img data-img="pied.qr.image" src="assets/img/whatsapp-qr.jpeg" alt="Code QR WhatsApp des collations de Maman Tokpa" width="352" height="352" loading="lazy">
     </a>
-    <p>Scannez pour nous écrire sur WhatsApp</p>
+    <p data-c="pied.qr">Scannez pour nous écrire sur WhatsApp</p>
   </div>
+  <a class="footer-legal" id="legal-link" href="#legal-section" hidden>Informations légales</a>
   <p class="footer-copyright">© <span id="year"></span> Tous droits réservés.</p>
 </footer>
 <button class="totop" id="totop" aria-label="Retour en haut de page" hidden>↑</button>
 
 <script src="assets/js/config.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="assets/js/env.js"></script>
+<script src="assets/js/content.js"></script>
+<script src="assets/js/loader.js"></script>
 </body>
 </html>
